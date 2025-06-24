@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7499214451857ed9f5ade623ead141a1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7499214451857ed9f5ade623ead141a1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7499214451857ed9f5ade623ead141a1 = L.map(
+                "map_7499214451857ed9f5ade623ead141a1",
+                {
+                    center: [37.45, 126.7],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bd7d083d5f9275e112721b90ea8b44fe = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7499214451857ed9f5ade623ead141a1);
+        
+    
+            var circle_marker_7d79fe68ab0e750a035f2207374f2da9 = L.circleMarker(
+                [37.7467, 126.4877],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7499214451857ed9f5ade623ead141a1);
+        
+    
+        var popup_bef52544a6e31a5522bee8e21d4a9e5c = L.popup({"maxWidth": 250});
+
+        
+            var html_1d6a301ae9a695e0b204015d401d265c = $(`<div id="html_1d6a301ae9a695e0b204015d401d265c" style="width: 100.0%; height: 100.0%;">군구: 강화군<br>고독사위험지수: 0.191<br>독거노인비율: 0.253<br>클러스터: 0</div>`)[0];
+            popup_bef52544a6e31a5522bee8e21d4a9e5c.setContent(html_1d6a301ae9a695e0b204015d401d265c);
+        
+
+        circle_marker_7d79fe68ab0e750a035f2207374f2da9.bindPopup(popup_bef52544a6e31a5522bee8e21d4a9e5c)
+        ;
+
+        
+    
+    
+            circle_marker_7d79fe68ab0e750a035f2207374f2da9.bindTooltip(
+                `<div>
+                     강화군 (Cluster 0)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8f1b188f7306dfb240545a62ecae5265 = L.circleMarker(
+                [37.5384, 126.7385],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7499214451857ed9f5ade623ead141a1);
+        
+    
+        var popup_02acb5597787c6451c45fac0f338bd68 = L.popup({"maxWidth": 250});
+
+        
+            var html_b058bbd50b3a6031dbafeb7e96381c4e = $(`<div id="html_b058bbd50b3a6031dbafeb7e96381c4e" style="width: 100.0%; height: 100.0%;">군구: 계양구<br>고독사위험지수: 0.408<br>독거노인비율: 0.570<br>클러스터: 3</div>`)[0];
+            popup_02acb5597787c6451c45fac0f338bd68.setContent(html_b058bbd50b3a6031dbafeb7e96381c4e);
+        
+
+        circle_marker_8f1b188f7306dfb240545a62ecae5265.bindPopup(popup_02acb5597787c6451c45fac0f338bd68)
+        ;
+
+        
+    
+    
+            circle_marker_8f1b188f7306dfb240545a62ecae5265.bindTooltip(
+                `<div>
+                     계양구 (Cluster 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4ca7b0b7be4a38d99272df291405d694 = L.circleMarker(
+                [37.4471, 126.7318],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7499214451857ed9f5ade623ead141a1);
+        
+    
+        var popup_8f57614469ca602d264b57fc7e9ba788 = L.popup({"maxWidth": 250});
+
+        
+            var html_1f4fbd8b14606d4299acb4a28196896d = $(`<div id="html_1f4fbd8b14606d4299acb4a28196896d" style="width: 100.0%; height: 100.0%;">군구: 남동구<br>고독사위험지수: 0.629<br>독거노인비율: 0.690<br>클러스터: 1</div>`)[0];
+            popup_8f57614469ca602d264b57fc7e9ba788.setContent(html_1f4fbd8b14606d4299acb4a28196896d);
+        
+
+        circle_marker_4ca7b0b7be4a38d99272df291405d694.bindPopup(popup_8f57614469ca602d264b57fc7e9ba788)
+        ;
+
+        
+    
+    
+            circle_marker_4ca7b0b7be4a38d99272df291405d694.bindTooltip(
+                `<div>
+                     남동구 (Cluster 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_45ee13c446dc925d099c2399a18cb725 = L.circleMarker(
+                [37.4746, 126.6326],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7499214451857ed9f5ade623ead141a1);
+        
+    
+        var popup_b8c9090c8a5f466b0c33cea0c491e8ac = L.popup({"maxWidth": 250});
+
+        
+            var html_482f7d885ca6d030287fbd217fb7a5ce = $(`<div id="html_482f7d885ca6d030287fbd217fb7a5ce" style="width: 100.0%; height: 100.0%;">군구: 동구<br>고독사위험지수: 0.655<br>독거노인비율: 0.931<br>클러스터: 2</div>`)[0];
+            popup_b8c9090c8a5f466b0c33cea0c491e8ac.setContent(html_482f7d885ca6d030287fbd217fb7a5ce);
+        
+
+        circle_marker_45ee13c446dc925d099c2399a18cb725.bindPopup(popup_b8c9090c8a5f466b0c33cea0c491e8ac)
+        ;
+
+        
+    
+    
+            circle_marker_45ee13c446dc925d099c2399a18cb725.bindTooltip(
+                `<div>
+                     동구 (Cluster 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_62dc10ef4fcb3357352d57e042949962 = L.circleMarker(
+                [37.4604, 126.668],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7499214451857ed9f5ade623ead141a1);
+        
+    
+        var popup_17c0ed4a2c4dac8aa9ad167dd1472de9 = L.popup({"maxWidth": 250});
+
+        
+            var html_e67b9c5e89f98f46fb57e0cbf3cff1c3 = $(`<div id="html_e67b9c5e89f98f46fb57e0cbf3cff1c3" style="width: 100.0%; height: 100.0%;">군구: 미추홀구<br>고독사위험지수: 0.700<br>독거노인비율: 0.500<br>클러스터: 1</div>`)[0];
+            popup_17c0ed4a2c4dac8aa9ad167dd1472de9.setContent(html_e67b9c5e89f98f46fb57e0cbf3cff1c3);
+        
+
+        circle_marker_62dc10ef4fcb3357352d57e042949962.bindPopup(popup_17c0ed4a2c4dac8aa9ad167dd1472de9)
+        ;
+
+        
+    
+    
+            circle_marker_62dc10ef4fcb3357352d57e042949962.bindTooltip(
+                `<div>
+                     미추홀구 (Cluster 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b8fcd1ab8ef1ebc4529a4e68f9a23b33 = L.circleMarker(
+                [37.5084, 126.721],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7499214451857ed9f5ade623ead141a1);
+        
+    
+        var popup_a1c3b55ae429ba241d328d83b9e15951 = L.popup({"maxWidth": 250});
+
+        
+            var html_eed39762e9b6a825d56327ec80e675f4 = $(`<div id="html_eed39762e9b6a825d56327ec80e675f4" style="width: 100.0%; height: 100.0%;">군구: 부평구<br>고독사위험지수: 0.436<br>독거노인비율: 0.640<br>클러스터: 3</div>`)[0];
+            popup_a1c3b55ae429ba241d328d83b9e15951.setContent(html_eed39762e9b6a825d56327ec80e675f4);
+        
+
+        circle_marker_b8fcd1ab8ef1ebc4529a4e68f9a23b33.bindPopup(popup_a1c3b55ae429ba241d328d83b9e15951)
+        ;
+
+        
+    
+    
+            circle_marker_b8fcd1ab8ef1ebc4529a4e68f9a23b33.bindTooltip(
+                `<div>
+                     부평구 (Cluster 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a00041b7ff49e4fb363a1066ca5b9a87 = L.circleMarker(
+                [37.5454, 126.6769],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7499214451857ed9f5ade623ead141a1);
+        
+    
+        var popup_9347216c87a1b1bd16d39e82d4bed19b = L.popup({"maxWidth": 250});
+
+        
+            var html_9d59ce63029e8dadfd11c4cb498f4af5 = $(`<div id="html_9d59ce63029e8dadfd11c4cb498f4af5" style="width: 100.0%; height: 100.0%;">군구: 서구<br>고독사위험지수: 0.256<br>독거노인비율: 0.040<br>클러스터: 0</div>`)[0];
+            popup_9347216c87a1b1bd16d39e82d4bed19b.setContent(html_9d59ce63029e8dadfd11c4cb498f4af5);
+        
+
+        circle_marker_a00041b7ff49e4fb363a1066ca5b9a87.bindPopup(popup_9347216c87a1b1bd16d39e82d4bed19b)
+        ;
+
+        
+    
+    
+            circle_marker_a00041b7ff49e4fb363a1066ca5b9a87.bindTooltip(
+                `<div>
+                     서구 (Cluster 0)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_362403e6100849ec39c54f2071a16a07 = L.circleMarker(
+                [37.4094, 126.6788],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7499214451857ed9f5ade623ead141a1);
+        
+    
+        var popup_d53fb7737543e4590fe121c64f772f37 = L.popup({"maxWidth": 250});
+
+        
+            var html_db342bf4d6c180bd087f043fef33e386 = $(`<div id="html_db342bf4d6c180bd087f043fef33e386" style="width: 100.0%; height: 100.0%;">군구: 연수구<br>고독사위험지수: 0.366<br>독거노인비율: 0.000<br>클러스터: 0</div>`)[0];
+            popup_d53fb7737543e4590fe121c64f772f37.setContent(html_db342bf4d6c180bd087f043fef33e386);
+        
+
+        circle_marker_362403e6100849ec39c54f2071a16a07.bindPopup(popup_d53fb7737543e4590fe121c64f772f37)
+        ;
+
+        
+    
+    
+            circle_marker_362403e6100849ec39c54f2071a16a07.bindTooltip(
+                `<div>
+                     연수구 (Cluster 0)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dc65972662bdce13236d77c48d286c2b = L.circleMarker(
+                [37.222, 126.1086],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7499214451857ed9f5ade623ead141a1);
+        
+    
+        var popup_11bca92f0e78b679e6878aeece618d74 = L.popup({"maxWidth": 250});
+
+        
+            var html_a6027d5a50644fa3b9c522f60ececbd4 = $(`<div id="html_a6027d5a50644fa3b9c522f60ececbd4" style="width: 100.0%; height: 100.0%;">군구: 옹진군<br>고독사위험지수: 0.719<br>독거노인비율: 1.000<br>클러스터: 2</div>`)[0];
+            popup_11bca92f0e78b679e6878aeece618d74.setContent(html_a6027d5a50644fa3b9c522f60ececbd4);
+        
+
+        circle_marker_dc65972662bdce13236d77c48d286c2b.bindPopup(popup_11bca92f0e78b679e6878aeece618d74)
+        ;
+
+        
+    
+    
+            circle_marker_dc65972662bdce13236d77c48d286c2b.bindTooltip(
+                `<div>
+                     옹진군 (Cluster 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7339448453b6aefedd0f9c655492361 = L.circleMarker(
+                [37.4732, 126.6211],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7499214451857ed9f5ade623ead141a1);
+        
+    
+        var popup_27f318cf70e0b0f65f1ff678c96d98a7 = L.popup({"maxWidth": 250});
+
+        
+            var html_92ec603b3c8fcb99603f2efd7116c114 = $(`<div id="html_92ec603b3c8fcb99603f2efd7116c114" style="width: 100.0%; height: 100.0%;">군구: 중구<br>고독사위험지수: 0.610<br>독거노인비율: 0.790<br>클러스터: 1</div>`)[0];
+            popup_27f318cf70e0b0f65f1ff678c96d98a7.setContent(html_92ec603b3c8fcb99603f2efd7116c114);
+        
+
+        circle_marker_c7339448453b6aefedd0f9c655492361.bindPopup(popup_27f318cf70e0b0f65f1ff678c96d98a7)
+        ;
+
+        
+    
+    
+            circle_marker_c7339448453b6aefedd0f9c655492361.bindTooltip(
+                `<div>
+                     중구 (Cluster 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
